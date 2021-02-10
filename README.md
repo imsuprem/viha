@@ -1,23 +1,23 @@
 <h1 align="center">
-  <a href="https://safdarjamal.github.io/quiz-app/">
-    QuizApp
+  <a href="https://github.com/imsuprem/viha">
+    Viha
   </a>
 </h1>
 
 <p align="center">
-  <a href="https://github.com/SafdarJamal/quiz-app/actions?query=workflow%3A%22Node.js+CI%22">
-    <img src="https://github.com/SafdarJamal/quiz-app/workflows/Node.js%20CI/badge.svg" alt="Node.js CI" />
+  <a href="https://github.com/imsuprem/viha/actions?query=workflow%3A%22Node.js+CI%22">
+    <img src="https://github.com/imsuprem/viha/workflows/Node.js%20CI/badge.svg" alt="Node.js CI" />
   </a>
-  <a href="https://github.com/SafdarJamal/quiz-app/releases">
-    <img src="https://img.shields.io/github/v/release/SafdarJamal/quiz-app" alt="GitHub Release (latest by date)" />
+  <a href="https://github.com/imsuprem/viha/releases">
+    <img src="https://img.shields.io/github/v/release/imsuprem/viha" alt="GitHub Release (latest by date)" />
   </a>
-  <a href="https://github.com/SafdarJamal/quiz-app/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/SafdarJamal/quiz-app" alt="License" />
+  <a href="https://github.com/imsuprem/viha/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/imsuprem/viha" alt="License" />
   </a>
 </p>
 
 <p align="center">
-  QuizApp is a free and open-source quiz application that lets you play fully customize quizzes right in the browser.
+  Viha is an AI application that provides you with quizes and analyses your performance to bring out the best recommendations for you.
 </p>
 
 ![quiz-app](https://user-images.githubusercontent.com/48409548/104132046-a39e5b80-539c-11eb-9df3-28d52e499a6c.png)
@@ -33,8 +33,8 @@
 To get a local copy of the code, clone it using git:
 
 ```
-git clone https://github.com/SafdarJamal/quiz-app.git
-cd quiz-app
+git clone https://github.com/imsuprem/viha.git
+cd viha
 ```
 
 Install dependencies:
@@ -62,4 +62,10 @@ In this project, you can run the following scripts:
 | npm run build | Builds the app for production to the `build` folder.                    |
 | npm run eject | This command will remove the single build dependency from your project. |
 
+## Credits
 
+QuizApp is built and maintained by [Viha Consulting Services](https://imsuprem.github.io).
+
+## License
+
+Code released under the [MIT license](https://github.com/imsuprem/viha/blob/master/LICENSE).

@@ -3,10 +3,10 @@
   "version": "5.0.0",
   "private": true,
   "author": {
-    "name": "Safdar Jamal",
-    "url": "https://safdarjamal.github.io"
+    "name": "Viha Consulting Ltd.",
+    "url": "https://imsuprem.github.io"
   },
-  "homepage": "https://safdarjamal.github.io/quiz-app/",
+  "homepage": "https://imsuprem.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",
