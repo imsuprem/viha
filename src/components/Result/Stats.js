@@ -22,23 +22,23 @@ const Stats = ({
         {remarks}
       </Header>
       <Header as="h2" textAlign="center" block>
-        Grade: {grade}
+      ग्रेड : {grade}
       </Header>
       <Header as="h3" textAlign="center" block>
-        Total Questions: {totalQuestions}
+      कुल प्रश्न : {totalQuestions}
       </Header>
       <Header as="h3" textAlign="center" block>
-        Correct Answers: {correctAnswers}
+      सही उत्तर : {correctAnswers}
       </Header>
       <Header as="h3" textAlign="center" block>
-        Your Score: {score}%
+      अपने इतने अंक प्राप्त किये : {score}%
       </Header>
       <Header as="h3" textAlign="center" block>
-        Passing Score: 60%
+      सफल होने के लिए इतने अंक चाहिए थे : 60%
       </Header>
       <Header as="h3" textAlign="center" block>
-        Time Taken:{' '}
-        {`${Number(hours)}h ${Number(minutes)}m ${Number(seconds)}s`}
+      अपने इतना समय लिया :{' '}
+        {`${Number(hours)} घंटे  ${Number(minutes)} मिनट  ${Number(seconds)} सेकण्ड `}
       </Header>
       <div style={{ marginTop: 35 }}>
         <Button

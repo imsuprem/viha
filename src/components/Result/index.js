@@ -21,16 +21,19 @@ const Result = ({
 
   return (
     <Container>
-      <Menu fluid widths={2}>
+      <Menu fluid widths={2} >
         <Menu.Item
+          content="परिणाम और लेखा-जोखा "
           name="Stats"
           active={activeTab === 'Stats'}
           onClick={handleTabClick}
         />
         <Menu.Item
+          content="देखें कि प्रश्नवार आपकी स्थिति कैसी रही !!!"
           name="QNA"
           active={activeTab === 'QNA'}
           onClick={handleTabClick}
+          className="bold"
         />
       </Menu>
       {activeTab === 'Stats' && (

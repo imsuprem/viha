@@ -33,9 +33,9 @@ const calculateGrade = score => {
   }
 
   if (score >= 60) {
-    remarks = 'Congratulations, YOU PASSED!';
+    remarks = 'बहुत अच्छे! आप उत्तीर्ण हुए!';
   } else {
-    remarks = 'Sorry, YOU FAILED!';
+    remarks = 'अफ़सोस! आप अनुत्तीर्ण हो';
   }
 
   return {

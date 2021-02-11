@@ -31,9 +31,8 @@ const Header = () => {
   return (
     <Menu stackable inverted size="massive">
       <Menu.Item header>
-        <h1 style={{ color: '#2185D0' }}>विहा  ..</h1>
-        
-        <br/><sup> जो सब जानती है ...</sup>
+        <a href="/"><h1 style={{ color: '#2185D0' }}>विहा  ..</h1>
+        <sup> जो सब जानती है ...</sup></a>
       </Menu.Item>
       {promptEvent && !isAppInstalled && (
         <Menu.Item position="right">
