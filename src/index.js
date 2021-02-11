@@ -4,9 +4,6 @@ import './index.css';
 import App from './components/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
-import CMS from 'netlify-cms-app'
-
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
