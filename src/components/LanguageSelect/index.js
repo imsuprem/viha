@@ -8,6 +8,7 @@ import Popover from "@material-ui/core/Popover";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListSubheader from "@material-ui/core/ListSubheader";
+import { Icon } from 'semantic-ui-react'
 
 const languageMap = {
   en: { label: "English", dir: "ltr", active: true },
@@ -26,9 +27,13 @@ const LanguageSelect = () => {
   return (
   
     <div className="d-flex justify-content-end align-items-center language-select-root">
-      <Button onClick={({ currentTarget }) => setMenuAnchor(currentTarget)} style={{color:"white"}}>
+   
+    <Icon size='large' name='world' />
+
+
+      <Button onClick={({ currentTarget }) => setMenuAnchor(currentTarget)} style={{color:"white"}} size="large">
         {languageMap[selected].label}
-        <ArrowDropDown fontSize="small" />
+        <ArrowDropDown fontSize="large" />
       </Button>
       <Popover
         open={!!menuAnchor}
