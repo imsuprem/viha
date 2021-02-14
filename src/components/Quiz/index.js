@@ -15,6 +15,7 @@ import he from 'he';
 
 import Countdown from '../Countdown';
 import { getLetter } from '../../utils';
+import { useTranslation } from "react-i18next";
 
 const Quiz = ({ data, countdownTime, endQuiz }) => {
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -22,6 +23,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
   const [userSlectedAns, setUserSlectedAns] = useState(null);
   const [questionsAndAnswers, setQuestionsAndAnswers] = useState([]);
   const [timeTaken, setTimeTaken] = useState(null);
+  const { t } = useTranslation();
 
   const handleItemClick = (e, { name }) => {
     setUserSlectedAns(name);
@@ -76,7 +78,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                   <Header as="h1" block floated="left">
                     <Icon name="info circle" />
                     <Header.Content>
-                      {`प्रश्न संख्या: ${questionIndex + 1} कुल प्रश्न: ${data.length}`}
+                      {`${t('Quiz.questionNo')}: ${questionIndex + 1} ${t('Quiz.totalQuestions')}: ${data.length}`}
                     </Header.Content>
                   </Header>
                   <Countdown
@@ -118,7 +120,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                 <Item.Extra>
                   <Button
                     primary
-                    content="अगला प्रश्न "
+                    content={t("Quiz.nextQuestion")}
                     onClick={handleNext}
                     floated="right"
                     size="big"

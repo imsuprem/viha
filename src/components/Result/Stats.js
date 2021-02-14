@@ -4,6 +4,7 @@ import { Segment, Header, Button } from 'semantic-ui-react';
 
 import ShareButton from '../ShareButton';
 import { calculateScore, calculateGrade, timeConverter } from '../../utils';
+import { useTranslation } from "react-i18next";
 
 const Stats = ({
   totalQuestions,
@@ -15,6 +16,7 @@ const Stats = ({
   const score = calculateScore(totalQuestions, correctAnswers);
   const { grade, remarks } = calculateGrade(score);
   const { hours, minutes, seconds } = timeConverter(timeTaken);
+  const { t } = useTranslation();
 
   return (
     <Segment>
@@ -22,28 +24,28 @@ const Stats = ({
         {remarks}
       </Header>
       <Header as="h2" textAlign="center" block>
-      ग्रेड : {grade}
+      {t("Stats.Grade")} : {grade}
       </Header>
       <Header as="h3" textAlign="center" block>
-      कुल प्रश्न : {totalQuestions}
+      {t("Stats.TotalQuestions")} : {totalQuestions}
       </Header>
       <Header as="h3" textAlign="center" block>
-      सही उत्तर : {correctAnswers}
+      {t("Stats.CorrectAnswers")} : {correctAnswers}
       </Header>
       <Header as="h3" textAlign="center" block>
-      अपने इतने अंक प्राप्त किये : {score}%
+      {t("Stats.Score")} : {score}%
       </Header>
       <Header as="h3" textAlign="center" block>
-      सफल होने के लिए इतने अंक चाहिए थे : 60%
+      {t("Stats.MinimumRequired")}: 60%
       </Header>
       <Header as="h3" textAlign="center" block>
-      अपने इतना समय लिया :{' '}
-        {`${Number(hours)} घंटे  ${Number(minutes)} मिनट  ${Number(seconds)} सेकण्ड `}
+      {t("Stats.TimeTaken")} :{' '}
+        {`${Number(hours)} ${t("Stats.Hours")}  ${Number(minutes)} ${t("Stats.Minutes")}  ${Number(seconds)} ${t("Stats.Seconds")} `}
       </Header>
       <div style={{ marginTop: 35 }}>
         <Button
           primary
-          content="यही वाला टेस्ट फिर से लें . . . "
+          content={t("Stats.RepeatTest")}
           onClick={replayQuiz}
           size="big"
           icon="redo"
@@ -52,7 +54,7 @@ const Stats = ({
         />
         <Button
           color="teal"
-          content="नया खेला चालू करो, हम फिर से प्रयास करेंगे "
+          content={t("Stats.NewTest")}
           onClick={resetQuiz}
           size="big"
           icon="home"

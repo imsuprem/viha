@@ -1,0 +1,197 @@
+{
+    "select_language": "Select Language",
+    "title": "Viha ...",
+    "tagLine": "The one who knows ...",
+    "Loader":{
+      "titleMessage": "Please wait ...",
+      "description": "While we dig deep in to "
+    },
+    "passRemarks": "Congartulation! You passed.",
+    "failRemarks": "Sorry, you failed.",
+    "headerTitle": "Viha Analytical Engine",
+    "headerDescription": "Hiya, I am Viha. Your AI assistant for today. I am going to ask you some questions. Some easy, some not so.",
+    "Questions":
+    {
+      "category":"Select Category",
+      "numOfQ":"No. of questions",
+      "difficulty":"Difficulty level",
+      "type":"Type of questions",
+      "hours":"Hours",
+      "minutes":"Minutes",
+      "seconds":"Seconds",
+      "letsStart":"Let's start",
+      "wait": "Please wait ..."
+    },
+    "Quiz":
+    {
+      "questionNo":"Question No ",
+      "totalQuestions": "Total questions ",
+      "nextQuestion": "Next Question"
+    },
+    "Result":
+    {
+      "Stats":"Stats",
+      "Qna": "QNA"
+    },
+    "Qna":
+  {
+    "SerialNo":"Serial No..",
+    "Question": "Question",
+    "Answer":"Answer",
+    "CorrectAnswer": "Correct answer",
+    "MarksObtained": "Marks obtained"
+  },
+  "Stats":
+  {
+    "Grade":"Grade",
+    "TotalQuestions": "Total questions",
+    "CorrectAnswers":"Correct answers",
+    "Score": "Score",
+    "MinimumRequired": "Minimum required marks",
+    "TimeTaken": "Time taken",
+    "RepeatTest": "Repeat the same test again",
+    "NewTest": "Take a new test",
+    "Hours": "Hours",
+    "Minutes": "Minutes",
+    "Seconds": "Seconds"
+  },
+  "Difficulty":
+  {
+    "Any":"Any",
+    "Easy": "Easy",
+    "Medium":"Medium",
+    "Hard": "Hard"
+  },
+  "QuestionType":{
+    "AnyType":"Any type",
+    "MultipleChoice":"Multiple choice",
+    "TrueFalse":"True / False"
+  },
+  "Categories": {
+    "0":{
+      "key":0,
+      "text":"Any Category",
+      "value":"0"
+    },
+    "9":{
+      "key":9,
+      "text":"General Knowledge",
+      "value":9
+    },
+    "10":{
+      "key":10,
+      "text":"Entertainment: Books",
+      "value":10
+    },
+    "11":{
+      "key":11,
+      "text":"Entertainment: Films",
+      "value":11
+    },
+    "12":{
+      "key":12,
+      "text":"Entertainment: Music",
+      "value":12
+    },
+    "13":{
+      "key":13,
+      "text":"Entertainment: Musicals & Theatres",
+      "value":13
+    },
+    "14":{
+      "key":14,
+      "text":"Entertainment: Television",
+      "value":14
+    },
+    "15":{
+      "key":15,
+      "text":"Entertainment: Video Games",
+      "value":15
+    },
+    "16":{
+      "key":16,
+      "text":"Entertainment: Board Games",
+      "value":16
+    },
+    "17":{
+      "key":17,
+      "text":"Science & Nature",
+      "value":17
+    },
+    "18":{
+      "key":18,
+      "text":"Science: Computers",
+      "value":18
+    },
+    "19":{
+      "key":19,
+      "text":"Science: Mathematics",
+      "value":19
+    },
+    "20":{
+      "key":20,
+      "text":"Mythology",
+      "value":20
+    },
+    "21":{
+      "key":21,
+      "text":"Sports",
+      "value":21
+    },
+    "22":{
+      "key":22,
+      "text":"Geography",
+      "value":22
+    },
+    "23":{
+      "key":23,
+      "text":"History",
+      "value":23
+    },
+    "24":{
+      "key":24,
+      "text":"Politics",
+      "value":24
+    },
+    "25":{
+      "key":25,
+      "text":"Arts",
+      "value":25
+    },
+    "26":{
+      "key":26,
+      "text":"Celebrities",
+      "value":26
+    },
+    "27":{
+      "key":27,
+      "text":"Animals",
+      "value":27
+    },
+    "28":{
+      "key":28,
+      "text":"Vehicles",
+      "value":28
+    },
+    "29":{
+      "key":29,
+      "text":"Entertainment: Comics",
+      "value":29
+    },
+    "30":{
+      "key":30,
+      "text":"Science: Gadgets",
+      "value":30
+    },
+    "31":{
+      "key":31,
+      "text":"Entertainment: Japanese Anime & Manga",
+      "value":31
+    },
+    "32":{
+      "key":32,
+      "text":"Entertainment: Cartoon & Animations",
+      "value":32
+    }
+  }
+}

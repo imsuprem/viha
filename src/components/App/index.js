@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Suspense } from 'react';
 import Layout from '../Layout';
 import Loader from '../Loader';
 import Main from '../Main';
@@ -70,6 +70,7 @@ const App = () => {
   };
 
   return (
+    <Suspense fallback={<Loader />}>
     <Layout>
       {loading && <Loader />}
       {!loading && !isQuizStarted && !isQuizCompleted && (
@@ -82,6 +83,7 @@ const App = () => {
         <Result {...resultData} replayQuiz={replayQuiz} resetQuiz={resetQuiz} />
       )}
     </Layout>
+    </Suspense>
   );
 };
 

@@ -1,17 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Table } from 'semantic-ui-react';
+import { useTranslation } from "react-i18next";
 
 const QNA = ({ questionsAndAnswers }) => {
+  const { t } = useTranslation();
   return (
     <Table celled striped selectable size="large">
       <Table.Header>
         <Table.Row>
-          <Table.HeaderCell>क्रमांक.</Table.HeaderCell>
-          <Table.HeaderCell>विहा ने क्या पूछा था </Table.HeaderCell>
-          <Table.HeaderCell>अपने ये उत्तर दिया</Table.HeaderCell>
-          <Table.HeaderCell>विहा को ये उत्तर सही लगा</Table.HeaderCell>
-          <Table.HeaderCell>विहा ने आपको इतने अंक दिए </Table.HeaderCell>
+          <Table.HeaderCell>{t("Qna.SerialNo")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("Qna.Question")} </Table.HeaderCell>
+          <Table.HeaderCell>{t("Qna.Answer")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("Qna.CorrectAnswer")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("Qna.MarksObtained")}</Table.HeaderCell>
         </Table.Row>
       </Table.Header>
       <Table.Body>

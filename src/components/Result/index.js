@@ -4,6 +4,7 @@ import { Container, Menu } from 'semantic-ui-react';
 
 import Stats from './Stats';
 import QNA from './QNA';
+import { useTranslation } from "react-i18next";
 
 const Result = ({
   totalQuestions,
@@ -14,6 +15,7 @@ const Result = ({
   resetQuiz
 }) => {
   const [activeTab, setActiveTab] = useState('Stats');
+  const { t } = useTranslation();
 
   const handleTabClick = (e, { name }) => {
     setActiveTab(name);
@@ -23,13 +25,13 @@ const Result = ({
     <Container>
       <Menu fluid widths={2} >
         <Menu.Item
-          content="परिणाम और लेखा-जोखा "
+          content={t("Result.Stats")}
           name="Stats"
           active={activeTab === 'Stats'}
           onClick={handleTabClick}
         />
         <Menu.Item
-          content="देखें कि प्रश्नवार आपकी स्थिति कैसी रही !!!"
+          content={t("Result.Qna")}
           name="QNA"
           active={activeTab === 'QNA'}
           onClick={handleTabClick}

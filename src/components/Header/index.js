@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { Menu, Button } from 'semantic-ui-react';
+import { Menu, Button} from 'semantic-ui-react';
+import LanguageSelect from "../LanguageSelect";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [promptEvent, setPromptEvent] = useState(null);
   const [appAccepted, setAppAccepted] = useState(false);
 
   let isAppInstalled = false;
+  const { t } = useTranslation();
 
   if (window.matchMedia('(display-mode: standalone)').matches || appAccepted) {
     isAppInstalled = true;
@@ -31,9 +34,11 @@ const Header = () => {
   return (
     <Menu stackable inverted size="massive">
       <Menu.Item header>
-        <a href="/"><h1 style={{ color: '#2185D0' }}>विहा  ..</h1>
-        <sup> जो सब जानती है ...</sup></a>
+        <a href="/"><h1 style={{ color: '#2185D0' }}>{t('title')}</h1>
+        <sup> {t('tagLine')}</sup></a>
       </Menu.Item>
+    
+      
       {promptEvent && !isAppInstalled && (
         <Menu.Item position="right">
           <Button
@@ -45,6 +50,12 @@ const Header = () => {
           />
         </Menu.Item>
       )}
+
+    <Menu.Item position = "right">
+     
+     <LanguageSelect />
+
+   </Menu.Item>
     </Menu>
   );
 };

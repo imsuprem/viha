@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 const calculateGrade = score => {
   const percentage = parseInt(score);
-
+ 
   let grade = null;
-  let remarks = null;
+  let remarks = '';
 
   if (percentage >= 97) {
     grade = 'A+';
@@ -33,9 +35,9 @@ const calculateGrade = score => {
   }
 
   if (score >= 60) {
-    remarks = 'बहुत अच्छे! आप उत्तीर्ण हुए!';
+    remarks = "Pass";
   } else {
-    remarks = 'अफ़सोस! आप अनुत्तीर्ण हो';
+    remarks = "Fail";
   }
 
   return {
