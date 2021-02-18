@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4c48667a.chunk.css",
+    "main.js": "/static/js/main.cdd9743e.chunk.js",
+    "main.js.map": "/static/js/main.cdd9743e.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.73e24a02.chunk.css": "/static/css/2.73e24a02.chunk.css",
+    "static/js/2.4dca7cff.chunk.js": "/static/js/2.4dca7cff.chunk.js",
+    "static/js/2.4dca7cff.chunk.js.map": "/static/js/2.4dca7cff.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9a11528f66bc642edff5b3478b8df5e8.js": "/precache-manifest.9a11528f66bc642edff5b3478b8df5e8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.73e24a02.chunk.css.map": "/static/css/2.73e24a02.chunk.css.map",
+    "static/css/main.4c48667a.chunk.css.map": "/static/css/main.4c48667a.chunk.css.map",
+    "static/media/index.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/mind.svg": "/static/media/mind.bfb21a23.svg"
+  }
+}
