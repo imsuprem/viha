@@ -1,0 +1,22 @@
+{
+  "short_name": "विहा",
+  "name": "विहा",
+  "description": "मेरा नाम विहा है, और मैं कुछ कम्प्यूटर जैसी हूँ. तकनीकी भाषा में मुझे कृतिम बुद्धि (Artificial Intelligence) भी कहते हैं.",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1B1C1D",
+  "background_color": "#D0D9DD"
+}
