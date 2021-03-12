@@ -7,7 +7,8 @@ import {
   Dropdown,
   Divider,
   Button,
-  Message
+  Message,
+  Label
 } from 'semantic-ui-react';
 
 import mindImg from '../../images/mind.svg';
@@ -300,8 +301,9 @@ const Main = ({ startQuiz }) => {
               )}
               <Divider />
               <Item.Meta>
+              <Label size="large" pointing="right">{t("Questions.category")}</Label>
                 <Dropdown
-                  fluid
+                  
                   selection
                   name="category"
                   placeholder={t("Questions.category")}
@@ -311,8 +313,9 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
+                <Label size="large" pointing="right">{t("Questions.numOfQ")}</Label>
                 <Dropdown
-                  fluid
+                  
                   selection
                   name="numOfQ"
                   placeholder={t("Questions.numOfQ")}
@@ -322,8 +325,9 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
+                <Label size="large" pointing="right">{t("Questions.difficulty")}</Label>
                 <Dropdown
-                  fluid
+                  
                   selection
                   name="difficulty"
                   placeholder={t("Questions.difficulty")}
@@ -333,8 +337,9 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
+                <Label size="large" pointing="right">{t("Questions.type")}</Label>
                 <Dropdown
-                  fluid
+                  
                   selection
                   name="type"
                   placeholder={t("Questions.type")}
@@ -344,16 +349,7 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <Dropdown
-                  search
-                  selection
-                  name="hours"
-                  placeholder={t("Questions.hours")}
-                  options={COUNTDOWN_TIME.hours}
-                  value={countdownTime.hours}
-                  onChange={handleTimeChange}
-                  disabled={processing}
-                />
+                 <Label size="large" pointing="right">{t("Questions.minutes")}</Label>
                 <Dropdown
                   search
                   selection
@@ -364,16 +360,7 @@ const Main = ({ startQuiz }) => {
                   onChange={handleTimeChange}
                   disabled={processing}
                 />
-                <Dropdown
-                  search
-                  selection
-                  name="seconds"
-                  placeholder={t("Questions.seconds")}
-                  options={COUNTDOWN_TIME.seconds}
-                  value={countdownTime.seconds}
-                  onChange={handleTimeChange}
-                  disabled={processing}
-                />
+                 
               </Item.Meta>
               <Divider />
               <Item.Extra>

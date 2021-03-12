@@ -17,7 +17,7 @@
       "difficulty":"Difficulty level",
       "type":"Type of questions",
       "hours":"Hours",
-      "minutes":"Minutes",
+      "minutes":"Maximum Time (minutes)",
       "seconds":"Seconds",
       "letsStart":"Let's start",
       "wait": "Please wait ..."
