@@ -226,7 +226,7 @@ const Main = ({ startQuiz }) => {
 
     if (error) setError(null);
 
-    const API = `http://triviadb.vihaconsulting.com/questions?amount=${numOfQuestions}&category=${category}&difficulty=${difficulty}&type=${questionsType}`;
+    const API = `https://triviadb.vihaconsulting.com/questions?amount=${numOfQuestions}&category=${category}&difficulty=${difficulty}&type=${questionsType}`;
 
     fetch(API)
       .then(respone => respone.json())
