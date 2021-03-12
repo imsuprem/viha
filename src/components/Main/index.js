@@ -225,7 +225,7 @@ const Main = ({ startQuiz }) => {
 
     if (error) setError(null);
 
-    const API = `https://opentdb.com/api.php?amount=${numOfQuestions}&category=${category}&difficulty=${difficulty}&type=${questionsType}`;
+    const API = `http://triviadb.vihaconsulting.com/questions?amount=${numOfQuestions}&category=${category}&difficulty=${difficulty}&type=${questionsType}`;
 
     fetch(API)
       .then(respone => respone.json())
