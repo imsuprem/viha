@@ -301,9 +301,11 @@ const Main = ({ startQuiz }) => {
               )}
               <Divider />
               <Item.Meta>
-              <Label size="large" pointing="right">{t("Questions.category")}</Label>
+            
                 <Dropdown
-                  
+                  fluid
+                  multiple
+                  search
                   selection
                   name="category"
                   placeholder={t("Questions.category")}
@@ -313,9 +315,9 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <Label size="large" pointing="right">{t("Questions.numOfQ")}</Label>
+              
                 <Dropdown
-                  
+                  fluid
                   selection
                   name="numOfQ"
                   placeholder={t("Questions.numOfQ")}
@@ -325,9 +327,9 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <Label size="large" pointing="right">{t("Questions.difficulty")}</Label>
+              
                 <Dropdown
-                  
+                  fluid
                   selection
                   name="difficulty"
                   placeholder={t("Questions.difficulty")}
@@ -337,9 +339,9 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                <Label size="large" pointing="right">{t("Questions.type")}</Label>
+             
                 <Dropdown
-                  
+                  fluid
                   selection
                   name="type"
                   placeholder={t("Questions.type")}
@@ -349,9 +351,9 @@ const Main = ({ startQuiz }) => {
                   disabled={processing}
                 />
                 <br />
-                 <Label size="large" pointing="right">{t("Questions.minutes")}</Label>
+               
                 <Dropdown
-                  search
+                  fluid
                   selection
                   name="minutes"
                   placeholder={t("Questions.minutes")}
